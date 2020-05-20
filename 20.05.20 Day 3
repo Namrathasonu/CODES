@@ -76,5 +76,22 @@ return(0);
 
 }
 
+
 2)Python program Exchange the Values of Two Numbers using ^ operator
   x=10 y=18 x = x ^ y; y = x ^ y; x = x ^ y; print ("After Swapping: x = ", x, " y =", y)
+
+
+3)Generating Armstrong numbers using Python programming language.
+ num = int(input("Enter a number: "))  
+sum = 0  
+temp = num  
+  
+while temp > 0:  
+   digit = temp % 10  
+   sum += digit ** 3  
+   temp //= 10  
+  
+if num == sum:  
+   print(num,"is an Armstrong number")  
+else:  
+   print(num,"is not an Armstrong number")
