@@ -1,0 +1,17 @@
+#input 1 : a, b, ab, aabb, aaabbb
+#output 1: YES
+#input2: aab, abb, aaabb, aabbb
+#output2: NO.
+
+n = input('Enter a string \n')
+l = list(n)
+a = []
+w = []
+for i in range(len(l)):
+    if l[i] not in a:
+        a.append(l[i])
+        w.append(l.count(l[i]))
+if len(set(w)) == 1:
+    print("YES")
+else:
+    print("NO")
