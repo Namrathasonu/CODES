@@ -1,0 +1,12 @@
+def UncommonWords(string1, string2): 
+    count = {} 
+    for word in string1.split(): 
+        count[word] = count.get(word, 0) + 1
+   print(count)
+    for word in string2.split(): 
+        count[word] = count.get(word, 0) + 1
+        print(count)
+    return [word for word in count if count[word] == 1]  
+string1 = "Hello World"
+string2 = "Hello Everyone"
+print(UncommonWords(string1, string2))
